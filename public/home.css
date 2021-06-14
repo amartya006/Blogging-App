@@ -1,0 +1,59 @@
+.head-full{
+    background-image: url("../images/eyewear.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.head-bottom{
+    margin-top: 100px;
+    color: white;
+}
+
+.head-bottom p{
+    margin-top:30px;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+    font-size: 20px;
+    color: black;
+}
+
+.nav-link, .navbar-brand{
+    color: white;
+}
+
+.our-blog-head{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.form-container{
+    max-width: 60%;
+    border: 1px solid rgb(0,0,0,0.3);
+}
+
+.signup-background{
+    background-image: url("../images/signup-back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;   
+}
+
+.footer{
+    background-color:black;
+    color: white;
+}
+
+.footer-bottom{
+    padding-top: 70px;
+    opacity: 0.5;
+}
+
+#blog{
+    width: 100%;
+}
+
+.blog-title{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}

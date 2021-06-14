@@ -1,0 +1,28 @@
+<%- include('partials/header.ejs') %>
+    <div class="home-body container">
+        <div class="row">
+            <% blog.forEach((blogEntry) => { %>
+            <div class="content col-8 p-5">
+                <h2 class="blog-title"><%= blogEntry.title %></h2>
+                <img class="img-fluid" src="<%= blogEntry.url %>">
+                <div class="icons-1 pt-3 pb-3">
+                    <i class="fas fa-calendar-week">  12 May 2021</i>  <i class="fas fa-feather-alt">  By <%= blogEntry.author.name %></i>
+                </div> 
+                <p class="content-main pr-3 pt-3">
+                    <%= blogEntry.blog %>
+                </p>
+                <span><a href="/show_blog/<%= blogEntry._id %>">Read More>></a></span>
+            </div>
+
+            <div class="extras col-4">
+                
+            </div>
+            <% }) %>
+        </div>
+    </div>
+
+
+<%- include('partials/footer.ejs') %>
+
+
+

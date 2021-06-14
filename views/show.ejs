@@ -1,0 +1,30 @@
+<%- include('partials/header') %>
+
+<div class="home-body container">
+    <div class="row">
+        
+        <div class="content col-8 p-5">
+            <h2 class="blog-title d-inline"><%= blogData.title %></h2>
+            <% if(currentUser && blogData.author.id.equals(currentUser._id) ){ %>
+            <span class="float-right"><a class="btn btn-warning" href="/show_blog/<%= blogData._id %>/edit">Edit</a>
+                <form class="d-inline" action="/show_blogs/<%= blogData._id %>?_method=DELETE" method="POST">
+                    <button class="btn btn-danger">DELETE</button>
+                </form>
+                </span>
+            <% }%>
+            <img class="img-fluid" src="<%= blogData.url %>">
+            <div class="icons-1 pt-3 pb-3">
+                <i class="fas fa-calendar-week">  12 May 2021</i>  <i class="fas fa-feather-alt">  -- <%= blogData.author.name %></i>
+            </div> 
+            <p class="content-main pr-3 pt-3">
+                <%= blogData.blog %>
+            </p>
+        </div>
+        <div class="extras col-4">
+            
+        </div>
+        
+    </div>
+</div>
+
+<%- include('partials/footer') %>
